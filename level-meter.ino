@@ -24,12 +24,10 @@ void loop() {
   
  if(sensorValue>772.5)
   digitalWrite(ledpin3, HIGH);
-  delay(sensorValue);
    
   // turn the ledPin off:
   if(sensorValue<257.5)digitalWrite(ledpin1, LOW);
   if(sensorValue<515)digitalWrite(ledpin2, LOW);
   if(sensorValue<772.5)digitalWrite(ledpin3, LOW);
 // stop the program for for <sensorValue> milliseconds:
-delay(sensorValue);
 }
